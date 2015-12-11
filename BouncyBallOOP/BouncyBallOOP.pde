@@ -3,8 +3,8 @@ Ball n;
 
 void setup() {
   size(800, 600);
-  b = new Ball(); //initialize b as a new object of the Ball class
-  n = new Ball();
+  b = new Ball(150); //initialize b as a new object of the Ball class
+  n = new Ball(75);
 }
 
 void draw() {
@@ -13,4 +13,6 @@ void draw() {
   n.display();
   b.move();
   n.move();
+  b.bounce();
+  n.bounce();
 }
